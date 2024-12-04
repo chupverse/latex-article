@@ -6,7 +6,7 @@ This is a proposal of template to write article by using latex
 
 * Windows: [MikTeX](https://miktex.org/download)
 * Mac OS X: [MacTeX](https://www.tug.org/mactex/mactex-download.html)
-* Linux: [TeXLive](https://tug.org/texlive/) is probably available in your favorite package manager.
+* Linux: [TeXLive](https://tug.org/texlive/)
   
 # Testing and using
 
