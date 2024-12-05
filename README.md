@@ -1,31 +1,48 @@
-# About
+## About
 
-This is a proposal of template to write article by using latex
+This respository contains a LaTeX template for manuscripts writen by members of both the University and University Hospital at Poitiers.
 
-# Installation
+## Instaling Latex
 
 * Windows: [MikTeX](https://miktex.org/download)
-* Mac OS X: [MacTeX](https://www.tug.org/mactex/mactex-download.html)
+* MacOS: [MacTeX](https://www.tug.org/mactex/mactex-download.html)
 * Linux: [TeXLive](https://tug.org/texlive/)
-  
-# Testing and using
+
+## Compiling LaTex
+
+An easy way to edit and compile LaTeX in a code editor is to use 'TexMaker' which is available on Linux, MacOS, and Windows.
+
+## Testing and using
 
 Here is a skeleton on what your LaTeX document should contain:
 
 ```latex
-\documentclass{zmdocument}
+\documentclass{article}
+\usepackage{chupverse}
 
-\title{Title}
-\author{Author}
-\licence[path/to/image]{Licence name}{URL} % optional
-\logo{logo.png}  % if ./logo.png is available
+\title{Title of your manuscript}
+
+\author{
+  Names of the first author \\
+  Institute \\
+ \texttt{Email}
+   \And
+  \And
+  Names of the 2nd author \\
+  Institute \\
+ \texttt{Email}
+}
 
 \begin{document}
 \maketitle
-\tableofcontents
+
+\begin{abstract}
+The text of your abstract
+\end{abstract}
+
+\keywords{Key1 \and  Key2 \and Key3}
 
 %% ... The rest of your document
+
 \end{document}
 ``
-See [the `article.tex` file in tests](./tests/article.tex) for a complete example.
-
